@@ -25,11 +25,11 @@ dependencies {
         }
         tomcat "org.apache.tomcat:tomcat-dbcp:${tomcatVersion}"
 
-    providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
+        providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
 
-    providedCompile(
-//              [group: 'javax.servlet', name: 'servlet-api', version: '2.5'],
-            )
+        providedCompile(
+            //[group: 'javax.servlet', name: 'servlet-api', version: '2.5'],
+        )
 
     compile(
                 [group: 'ch.vorburger.mariaDB4j', name: 'mariaDB4j', version: '2.1.3'],

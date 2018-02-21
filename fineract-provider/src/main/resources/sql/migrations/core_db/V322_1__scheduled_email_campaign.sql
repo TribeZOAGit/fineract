@@ -40,6 +40,7 @@ CREATE TABLE `scheduled_email_campaign` (
 	`last_trigger_date` DATETIME NULL DEFAULT NULL,
 	`recurrence_start_date` DATETIME NULL DEFAULT NULL,
 	`is_visible` TINYINT(1) NULL DEFAULT '1',
+	`previous_run_status` VARCHAR(10) NULL DEFAULT NULL,
 	`previous_run_error_log` TEXT NULL DEFAULT NULL,
 	`previous_run_error_message` TEXT NULL DEFAULT NULL,
 	PRIMARY KEY (`id`),
